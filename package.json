@@ -1,0 +1,21 @@
+{
+  "name": "kue-scheduler-ng",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "dependencies": {
+    "async": "^1.5.0",
+    "cron": "^1.1.0",
+    "date.js": "^0.2.1",
+    "human-interval": "^0.1.5",
+    "kue": "^0.10.4",
+    "lodash": "^3.10.1",
+    "node-uuid": "^1.4.7"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  }
+}
