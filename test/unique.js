@@ -16,14 +16,14 @@ describe("unique", function() {
 
         var job = queue.create(job_name, { some_field: 'with value 1' }).unique(unique);
 
-        queue.schedule('1 second',job, function (result) {
+        queue.schedule('3 second',job, function (result) {
             if (result instanceof Error) {
                 done(result);
             }
 
             var job2 = queue.create(job_name, { some_field: 'with value 2' }).unique(unique);
 
-            queue.schedule('2 second',job2, function (result) {
+            queue.schedule('5 second',job2, function (result) {
                 if (result instanceof Error) {
                     done(result);
                 }
