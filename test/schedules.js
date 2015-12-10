@@ -24,7 +24,8 @@ describe("schedule", function() {
             console.log("running",job_name);
             done_job();
             done();
-            job.remove();
+
+            setTimeout(job.remove,1000);
         });
     });
 
@@ -43,7 +44,7 @@ describe("schedule", function() {
             console.log("running",job_name);
             done_job();
             done();
-            job.remove();
+            setTimeout(job.remove,1000);
         });
     });
 
@@ -64,7 +65,7 @@ describe("schedule", function() {
             //console.log("running",job_name);
             done_job();
             done();
-            job.remove();
+            setTimeout(job.remove,1000);
         });
     });
 

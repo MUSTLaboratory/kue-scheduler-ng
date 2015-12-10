@@ -12,6 +12,7 @@
     "human-interval": "^0.1.5",
     "kue": "^0.10.4",
     "lodash": "^3.10.1",
+    "node-redis-warlock": "^0.1.4",
     "node-uuid": "^1.4.7"
   },
   "devDependencies": {
